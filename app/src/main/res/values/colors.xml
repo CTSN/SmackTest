@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFFFF</color>
+    <color name="gray_header">#F8F8F8</color>
+    
+    <color name="gray_title">#545454</color>
+    <color name="gray_text">#70787A</color>
+    <color name="gray_hint">#AEB4B4</color>
+    
+    <color name="gray_item">#F8F8F8</color>
+    <color name="gray_layout">#D7D7D7</color>
+    <color name="gray_line">#D7D7D7</color>
+    
+    <color name="white">#FFFFFF</color>
+</resources>

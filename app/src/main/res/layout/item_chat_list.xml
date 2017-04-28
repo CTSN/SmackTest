@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/tv_chat_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/gray_hint"
+        android:textSize="@dimen/textsize_normal" />
+
+    <RelativeLayout
+        android:id="@+id/ll_chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_chat_date">
+
+        <TextView
+            android:id="@+id/tv_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/textsize_normal" />
+
+        <TextView
+            android:id="@+id/tv_chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_chat_name"
+            android:background="@drawable/bg_chat_left_selector"
+            android:clickable="true"
+            android:singleLine="false"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/textsize_normal" />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_chat_name"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_chat_date">
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_chat_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_chat_right_selector"
+            android:clickable="true"
+            android:singleLine="false"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/textsize_normal" />
+
+        <TextView
+            android:id="@+id/tv_chat_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/textsize_normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

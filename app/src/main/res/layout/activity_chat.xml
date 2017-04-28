@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_header" />
+
+    <ListView
+        android:id="@+id/lv_chat_list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:transcriptMode="normal"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btn_img"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/chat_more" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/chat_send" />
+
+        <EditText
+            android:id="@+id/et_send"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_img"
+            android:hint="" />
+    </RelativeLayout>
+
+</LinearLayout>
